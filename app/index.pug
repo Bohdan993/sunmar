@@ -1,0 +1,62 @@
+extends pug/base
+
+
+
+append vars
+	- body.classList.push('index-page')
+	- meta.keywords = ''
+	- meta.themeColor = '#06A9DA'
+	//- - meta.ogImage = '/img/logo.png'
+	//- - meta.ogImageWidth = '1200'
+	//- - meta.ogImageHeight = '630'
+	//- - meta.ogImageType = 'image/png'
+	//- - meta.ogImage = '/img/logo-s.png'
+	//- - meta.ogImageWidth = '1200'
+	//- - meta.ogImageHeight = '630'
+	//- - meta.ogImageType = 'image/png'
+	//- - meta.ogUrl = 'https://greens.studio/'
+	//- - meta.appleMobileWebAppCapable = 'on'
+	//- - meta.appleMobileWebAppStatusBarStyle = '#06A9DA'
+	//- - meta.appleMobileWebAppTitle = 'Service Calculator'
+	//- - meta.applicationName = 'Service Calculator'
+	//- - meta.XUACompatible = 'IE=edge'
+	//- - link.appleTouchIconPrecomposed = '15'
+	//- - link.icon16x16 = 'favicon-16x16.png'
+	//- - link.icon32x32 = 'favicon-32x32.png'
+	//- - link.icon96x96 = 'favicon-96x96.png'
+	//- - link.icon128x128 = 'favicon-128x128.png'
+	//- - link.icon196x196 = 'favicon-196x196.png'
+
+
+prepend vars
+	- title = 'Sunmar Residence'
+	- description = 'Sunmar Residence'
+
+
+
+
+
+block links
+	link(rel="preconnect" href="https://fonts.googleapis.com")
+	link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+	link(media="none" onload="if(media!='all') media='all'" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" type="text/css")
+
+
+block head-end
+
+
+
+
+
+
+
+block content
+	include pug/pages/index
+
+
+block scripts
+	script(src=`js/libs.min.js?v=${Date.now()}` defer)
+	link(rel="preload" href=`js/index.min.js?v=${Date.now()}` as="script")
+	script(src=`js/index.min.js?v=${Date.now()}` defer)
+
+

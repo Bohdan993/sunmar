@@ -1,0 +1,38 @@
+.modals
+  #createModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.modal-title Нова категорія
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') &times;
+        .modal-body
+          form
+            .form-group
+              label.col-form-label(for='recipient-name') Назва:
+              input#recipient-name.form-control(type='text')
+            .form-group
+              label.col-form-label(for='message-text') Опис:
+              textarea#message-text.form-control
+            .form-group
+              .input-group.mb-3
+                .custom-file
+                  label.custom-file-label(for='inputGroupFile01') Оберіть файл...
+                  input#inputGroupFile01.custom-file-input(type='file')
+                  
+        .modal-footer
+          button.genric-btn.danger(type='button' data-dismiss='modal') Закрити
+          button.genric-btn.info(type='button') Додати
+
+
+  #editModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.modal-title Редагувати категорію
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') &times;
+        .modal-body
+        .modal-footer
+          button.genric-btn.danger(type='button' data-dismiss='modal') Закрити
+          button.genric-btn.info(type='button') Зберегти

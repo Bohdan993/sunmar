@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    align-items: center;
+
+}
+
+.tab {
+    font-size: 16px;
+    line-height: 23/16;
+    letter-spacing: 0.018em;
+    color: @gray2;
+    padding: 12px 27px;
+    background: @gray7;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+    transition: color 0.25s linear, background-color 0.25s linear, box-shadow 0.25s linear;
+    // width: 100%;
+    min-width: 165px;
+    text-align: center;
+
+    &.active {
+        background: @white;
+        box-shadow: 0px 1px 2px rgba(39, 43, 63, 0.24);
+        border-radius: 4px;
+        color: @main-color;
+    }
+
+    &:hover {
+        color: @main-color;
+    }
+}
+
+[data-section] {
+    animation: fadeIn 0.5s linear forwards;
+
+    &:not(.active) {
+        display: none;
+    }
+}

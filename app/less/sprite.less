@@ -1,0 +1,208 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@s-arrow-down-name: 's-arrow-down';
+@s-arrow-down-x: 110px;
+@s-arrow-down-y: 75px;
+@s-arrow-down-offset-x: -110px;
+@s-arrow-down-offset-y: -75px;
+@s-arrow-down-width: 10px;
+@s-arrow-down-height: 6px;
+@s-arrow-down-total-width: 121px;
+@s-arrow-down-total-height: 118px;
+@s-arrow-down-image: 'sprite.png';
+@s-arrow-down: 110px 75px -110px -75px 10px 6px 121px 118px 'sprite.png' 's-arrow-down';
+@s-clock-2-name: 's-clock-2';
+@s-clock-2-x: 96px;
+@s-clock-2-y: 0px;
+@s-clock-2-offset-x: -96px;
+@s-clock-2-offset-y: 0px;
+@s-clock-2-width: 25px;
+@s-clock-2-height: 25px;
+@s-clock-2-total-width: 121px;
+@s-clock-2-total-height: 118px;
+@s-clock-2-image: 'sprite.png';
+@s-clock-2: 96px 0px -96px 0px 25px 25px 121px 118px 'sprite.png' 's-clock-2';
+@s-clock-name: 's-clock';
+@s-clock-x: 20px;
+@s-clock-y: 94px;
+@s-clock-offset-x: -20px;
+@s-clock-offset-y: -94px;
+@s-clock-width: 21px;
+@s-clock-height: 20px;
+@s-clock-total-width: 121px;
+@s-clock-total-height: 118px;
+@s-clock-image: 'sprite.png';
+@s-clock: 20px 94px -20px -94px 21px 20px 121px 118px 'sprite.png' 's-clock';
+@s-clock-s-name: 's-clock_s';
+@s-clock-s-x: 96px;
+@s-clock-s-y: 75px;
+@s-clock-s-offset-x: -96px;
+@s-clock-s-offset-y: -75px;
+@s-clock-s-width: 14px;
+@s-clock-s-height: 14px;
+@s-clock-s-total-width: 121px;
+@s-clock-s-total-height: 118px;
+@s-clock-s-image: 'sprite.png';
+@s-clock-s: 96px 75px -96px -75px 14px 14px 121px 118px 'sprite.png' 's-clock_s';
+@s-endless-name: 's-endless';
+@s-endless-x: 0px;
+@s-endless-y: 0px;
+@s-endless-offset-x: 0px;
+@s-endless-offset-y: 0px;
+@s-endless-width: 48px;
+@s-endless-height: 47px;
+@s-endless-total-width: 121px;
+@s-endless-total-height: 118px;
+@s-endless-image: 'sprite.png';
+@s-endless: 0px 0px 0px 0px 48px 47px 121px 118px 'sprite.png' 's-endless';
+@s-lock-name: 's-lock';
+@s-lock-x: 0px;
+@s-lock-y: 47px;
+@s-lock-offset-x: 0px;
+@s-lock-offset-y: -47px;
+@s-lock-width: 47px;
+@s-lock-height: 47px;
+@s-lock-total-width: 121px;
+@s-lock-total-height: 118px;
+@s-lock-image: 'sprite.png';
+@s-lock: 0px 47px 0px -47px 47px 47px 121px 118px 'sprite.png' 's-lock';
+@s-mail-name: 's-mail';
+@s-mail-x: 96px;
+@s-mail-y: 25px;
+@s-mail-offset-x: -96px;
+@s-mail-offset-y: -25px;
+@s-mail-width: 25px;
+@s-mail-height: 25px;
+@s-mail-total-width: 121px;
+@s-mail-total-height: 118px;
+@s-mail-image: 'sprite.png';
+@s-mail: 96px 25px -96px -25px 25px 25px 121px 118px 'sprite.png' 's-mail';
+@s-marker-name: 's-marker';
+@s-marker-x: 0px;
+@s-marker-y: 94px;
+@s-marker-offset-x: 0px;
+@s-marker-offset-y: -94px;
+@s-marker-width: 20px;
+@s-marker-height: 24px;
+@s-marker-total-width: 121px;
+@s-marker-total-height: 118px;
+@s-marker-image: 'sprite.png';
+@s-marker: 0px 94px 0px -94px 20px 24px 121px 118px 'sprite.png' 's-marker';
+@s-phone-name: 's-phone';
+@s-phone-x: 96px;
+@s-phone-y: 50px;
+@s-phone-offset-x: -96px;
+@s-phone-offset-y: -50px;
+@s-phone-width: 25px;
+@s-phone-height: 25px;
+@s-phone-total-width: 121px;
+@s-phone-total-height: 118px;
+@s-phone-image: 'sprite.png';
+@s-phone: 96px 50px -96px -50px 25px 25px 121px 118px 'sprite.png' 's-phone';
+@s-repair-name: 's-repair';
+@s-repair-x: 47px;
+@s-repair-y: 47px;
+@s-repair-offset-x: -47px;
+@s-repair-offset-y: -47px;
+@s-repair-width: 47px;
+@s-repair-height: 47px;
+@s-repair-total-width: 121px;
+@s-repair-total-height: 118px;
+@s-repair-image: 'sprite.png';
+@s-repair: 47px 47px -47px -47px 47px 47px 121px 118px 'sprite.png' 's-repair';
+@s-wallet-name: 's-wallet';
+@s-wallet-x: 48px;
+@s-wallet-y: 0px;
+@s-wallet-offset-x: -48px;
+@s-wallet-offset-y: 0px;
+@s-wallet-width: 48px;
+@s-wallet-height: 47px;
+@s-wallet-total-width: 121px;
+@s-wallet-total-height: 118px;
+@s-wallet-image: 'sprite.png';
+@s-wallet: 48px 0px -48px 0px 48px 47px 121px 118px 'sprite.png' 's-wallet';
+@spritesheet-width: 121px;
+@spritesheet-height: 118px;
+@spritesheet-image: 'sprite.png';
+@spritesheet-sprites: @s-arrow-down @s-clock-2 @s-clock @s-clock-s @s-endless @s-lock @s-mail @s-marker @s-phone @s-repair @s-wallet;
+@spritesheet: 121px 118px 'sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(../img/sprites/png/sprite.png)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
