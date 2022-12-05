@@ -1,13 +1,10 @@
 const $body = document.querySelector('body');
-const $btn = document.querySelector('.table-calc__btn');
-const $table = document.querySelector('.table-calc');
-const $content = document.querySelector('#catalog-content .ajax_load.cur.block');
-const $inputs = document.querySelectorAll('.table-calc input');
+const $intervalSlider = document.querySelector('.preview__interval-images');
+const $facilityGrid = document.querySelector('.facility .grid');
+
 
 export {
 	$body,
-	$btn,
-	$table,
-	$content,
-	$inputs
+	$intervalSlider,
+	$facilityGrid
 }

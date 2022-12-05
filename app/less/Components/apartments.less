@@ -1,0 +1,64 @@
+@width: 310px;
+@height: @width;
+@f: 1.5;   /* control the scale factor */
+
+.apartments__layer {
+    .fPa((234%/2), (119%/2), (234px/2), (119px/2), 992px, 1600px);
+}
+
+.apartments__top{
+    justify-content: center;
+    .fPa(0, 82%, 0, 82px, 1200px, 1600px);
+}
+
+.apartments__bottom {
+    justify-content: center;
+}
+
+.apartments__middle{
+    padding-bottom: 62px;
+}
+
+.apartments__grid {
+    overflow-y: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-auto-rows: @height;
+    grid-auto-flow: dense;
+    width: 100%;
+
+    img {
+        width: 0;
+        height: 0;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: .8s linear;
+        will-change: width, height;
+
+        &:hover:not(.w) {
+            width:  calc(@width*@f);
+            height: calc(@height*@f);
+        }
+
+        &.w:hover {
+            width:  calc(@width*@f);
+        }
+    }
+
+
+    .horizontal {
+        grid-column: span 2;
+    }
+      
+    .vertical {
+        grid-row: span 2;
+    }
+      
+    .big {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}

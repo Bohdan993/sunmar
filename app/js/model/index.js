@@ -1,5 +1,7 @@
-import { initInputs } from "./App/initInputs.js"
+import { initIntervalSlider } from "./App/initIntervalSlider.js"
+import { initFacilityGrid } from './App/initFacilityGrid.js'
 
 export {
-    initInputs
+    initIntervalSlider,
+    initFacilityGrid
 }

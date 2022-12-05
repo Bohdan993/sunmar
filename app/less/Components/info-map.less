@@ -1,0 +1,24 @@
+.info-map__layer {
+    .fPa((250%/2), (250%/2), (250px/2), (250px/2), 992px, 1600px);
+}
+
+.info-map__image {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: (1112/1600) * 100%;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+    }
+}

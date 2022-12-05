@@ -4,7 +4,7 @@
 
 
 html {
-  font-size: 16px;
+  font-size: 24px;
   scroll-behavior: smooth;
 
 }
@@ -34,11 +34,10 @@ body {
   font-weight: 400;
   color: @font-color;
   letter-spacing: 0.2px;
-  line-height: 14.3/10;
+  line-height: 1.25;
   margin: 0;
   padding: 0;
   // overflow-y: hidden;
-
 
 }
 
@@ -143,7 +142,12 @@ main {
 
 //|||||||||||||||||||COMMON ELEMENTS|||||||||||||||||||//
 
-
+.subtitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: (44/24);
+  font-weight: 400;
+}
 
 //|||||||||||||||||||COMMON ELEMENTS END|||||||||||||||||||//
 
@@ -191,11 +195,11 @@ main {
 @import url("app/less/BEM Components/center/center.less");
 // @import url("app/less/BEM Components/center/_size/center_size_l.less");
 // @import url("app/less/BEM Components/center/_size/center_size_s.less");
-// @import url("app/less/BEM Components/f-container/f-container.less");
+@import url("app/less/BEM Components/f-container/f-container.less");
+@import url("app/less/BEM Components/title/title.less");
 @import url("app/less/BEM Components/title/__type/title__h1.less");
-// @import url("app/less/BEM Components/title/__type/title__h2.less");
+@import url("app/less/BEM Components/title/__type/title__h2.less");
 // @import url("app/less/BEM Components/title/__type/title__h3.less");
-// @import url("app/less/BEM Components/title/title.less");
 // @import url("app/less/BEM Components/checkbox/checkbox.less");
 // @import url("app/less/BEM Components/breadcrumbs/breadcrumbs.less");
 // @import url("app/less/BEM Components/burger/burger.less");
@@ -208,9 +212,8 @@ main {
 // @import url("app/less/BEM Components/main-btn/_color/main-btn_gray.less");
 // @import url("app/less/BEM Components/main-btn/_color/main-btn_white.less");
 // @import url("app/less/BEM Components/control-btn/control-btn.less");
-// @import url("app/less/BEM Components/text/text.less");
+@import url("app/less/BEM Components/text/text.less");
 // @import url("app/less/BEM Components/tabs/tabs.less");
-// @import url("app/less/BEM Components/text/text.less");
 // @import url("app/less/BEM Components/pagination/pagination.less");
 // @import url("app/less/BEM Components/footer/footer.less");
 // @import url("app/less/BEM Components/actions/actions.less");
@@ -220,7 +223,20 @@ main {
 
 
 
-// @import url("app/less/Components/table.less");
+@import url("app/less/Components/about.less");
+@import url("app/less/Components/about2.less");
+@import url("app/less/Components/amenity.less");
+@import url("app/less/Components/apartments.less");
+@import url("app/less/Components/characteristics.less");
+@import url("app/less/Components/contact.less");
+@import url("app/less/Components/entrance.less");
+@import url("app/less/Components/facility.less");
+@import url("app/less/Components/header.less");
+@import url("app/less/Components/health.less");
+@import url("app/less/Components/info-map.less");
+@import url("app/less/Components/lobby.less");
+@import url("app/less/Components/pool.less");
+@import url("app/less/Components/preview.less");
 
 
 

@@ -1,25 +1,28 @@
 
 import {
-	initInputs
+	initIntervalSlider,
+	initFacilityGrid
 } from '../model/index.js';
 
 
 
 import {
 	// $accordeons,
-	$table,
-	$btn,
-	$content,
-	$inputs
-} from '../view/index.js';
+	$intervalSlider,
+	$facilityGrid
+	} from '../view/index.js';
 
 
 const app = {
 	init() {
-		this.ii();
+		this.iis();
+		this.ifg();
 	},
-	ii(){
-		initInputs($table, $btn, $content,$inputs);
+	iis(){
+		initIntervalSlider($intervalSlider);
+	},
+	ifg(){
+		initFacilityGrid($facilityGrid);
 	}
 }
 

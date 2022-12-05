@@ -1,10 +1,12 @@
 {
-  "name": "Energy calculator",
+  "name": "Sunmar resort",
   "version": "1.0.0",
-  "description": "Service calculator",
+  "description": "Sunmar resort",
   "main": "gulpfile.js",
   "type": "module",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
   },

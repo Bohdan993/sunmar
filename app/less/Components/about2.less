@@ -1,0 +1,37 @@
+.about2__layer {
+    .fPa((215%/2), (250%/2), (215px/2), (250px/2), 992px, 1600px);
+}
+
+.about2__top {
+    .about2__image {
+        flex-basis: ((61 + 75 + 682)/1475) * 100%;
+        margin-left: (61/1475) * 100%;
+        margin-right: (75/1475) * 100%;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            padding-top: (392/682) * 100%;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .about2__info {
+        flex-basis: ((1475 - (61 + 75 + 682))/1475) * 100%;
+        margin-right: (61/1475) * 100%;
+    }
+}
+
+.about2__title {
+    .fPa(0, 100%, 0, 100px, 992px, 1600px);
+}
