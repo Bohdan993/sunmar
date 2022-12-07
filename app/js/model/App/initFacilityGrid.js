@@ -5,6 +5,7 @@ import { isElementInViewport } from "./Utils/index.js";
 export const initFacilityGrid = (grid) => {
     let isStamped = false;
     let $stamp = grid.querySelector('.stamp');
+    let $stampImg = $stamp.querySelector('img');
     let $sizer = grid.querySelector('.grid-sizer');
     let visibleItems = [];
     let reLayout = false;
@@ -29,10 +30,13 @@ export const initFacilityGrid = (grid) => {
     })
 
     $stamp.addEventListener('click', handleStampClick);
+    $stampImg.addEventListener('transitionend', handleTransitionend);
 
     function handleClick(element, items, e) {
         if(!isStamped) {
-            iso.stamp($stamp)
+            let src = element.querySelector('img').src;
+            $stampImg.src = src;
+            iso.stamp($stamp);
             grid.classList.add('stamped');
         }
 
@@ -54,6 +58,10 @@ export const initFacilityGrid = (grid) => {
         iso.layout();
         isStamped = false;
         reLayout = false;
+    }
+
+    function handleTransitionend(e) {
+        console.log('ok');
     }
 
     iso.on( 'layoutComplete', function( laidOutItems ) {
