@@ -68,3 +68,38 @@
         object-fit: cover;
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    .preview__interval-images {
+        &:before {
+            padding-top: (448/375) * 100%;
+            height: auto;
+            min-height: unset;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .preview__images {
+        flex-direction: column;
+    }
+
+    .preview__image {
+        width: 100%;
+    }
+
+    .preview__image:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .preview__image:nth-child(even) {
+        margin-left: 0;
+    }
+}

@@ -2,7 +2,8 @@
 import {
 	initIntervalSlider,
 	initFacilityGrid,
-	initSplideSliders
+	initSplideSliders,
+	initModal
 } from '../model/index.js';
 
 
@@ -19,6 +20,7 @@ const app = {
 		this.iis();
 		this.ifg();
 		this.iss();
+		this.im();
 	},
 	iis(){
 		initIntervalSlider($intervalSlider);
@@ -28,6 +30,9 @@ const app = {
 	},
 	iss(){
 		initSplideSliders();
+	},
+	im(){
+		initModal();
 	}
 }
 

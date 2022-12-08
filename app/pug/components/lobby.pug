@@ -6,12 +6,29 @@
                     |BUSINESS & PLEASURE
                 h2.lobby__title.title.title__h2
                     |THE LOBBY
-        .lobby__middle
+        .lobby__mobile.mobile
+            #lobby-carousel.splide(aria-label='Beautiful Images')
+                .splide__arrows
+                    button.splide__arrow.splide__arrow--prev
+                        div
+                    button.splide__arrow.splide__arrow--next
+                        div
+                .splide__track
+                    ul.splide__list.lobby__list
+                        li.splide__slide.lobby__slide
+                            img(src='img/32-min.png' alt='')
+                        li.splide__slide.lobby__slide
+                            img(src='img/33-min.png' alt='')
+                        li.splide__slide.lobby__slide
+                            img(src='img/34-min.png' alt='')
+                        li.splide__slide.lobby__slide
+                            img(src='img/35-min.png' alt='')
+        .lobby__middle.desktop
             .lobby__main-image
                 img(src="img/17-min.png", alt="Map")
         .center
             .lobby__bottom.f-container
-                .lobby__images-wrap
+                .lobby__images-wrap.desktop
                     .lobby__image
                         img(src="img/18-min.png", alt="Sunmar")
                     .lobby__images.f-container
@@ -23,5 +40,5 @@
                             |The classic, sophisticated design of the lobby generates positive feelings that leave a powerful impression. Here is a sociable, welcoming space where residents and visitors can gather together.
                         p.lobby__paragraph.text.paragraph
                             |A key feature of this handsomely appointed work-live oriented area is the co-working zone – an informal sphere of functionality that actively encourages networking and interaction.  
-                    a.lobby__btn.main-btn(href="#")
+                    button.lobby__btn.main-btn(data-micromodal-trigger="modal-1")
                         |Discover more

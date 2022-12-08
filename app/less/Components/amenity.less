@@ -5,7 +5,11 @@
 .numbers-card {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
+
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
 }
 
 .numbers-card__num {
@@ -16,4 +20,98 @@
     line-height: (84/96);
     text-transform: uppercase;
     color: @main-color;
+    margin-right: 20px;
+}
+
+.amenity__main-image {
+    position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            object-fit: cover;
+        }
+}
+
+.amenity__info {
+    flex-basis: (((271/2) + 548)/1475) * 100%;
+    padding-right: ((271/2)/1475) * 100%;
+}
+
+
+
+.amenity__title {
+    .fPa(0, 100%, 0, 100px, 992px, 1600px);
+}
+
+.amenity__text {
+    padding-bottom: 60px;
+    max-width: 600px;
+}
+.amenity__top {
+    .fPa(0, 153%, 0, 153px, 992px, 1600px);
+    .amenity__images {
+        flex-basis: (((271/2) + 563)/1475) * 100%;
+        padding-left: ((271/2)/1475) * 100%;
+        .amenity__main-image {
+            width: 100%;
+            &:before {
+                content: '';
+                display: block;
+                padding-top: ((853/563)) * 100%; 
+            }
+    
+            &:after {
+                content: '';
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: url('../img/pattern.svg') no-repeat right/contain;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+.amenity__bottom {
+    .amenity__images {
+        flex-basis: ((1475 - ((232/2) + 563))/1475) * 100%;
+        padding-right: ((232/2)/1475) * 100%;
+
+        .amenity__main-image {
+            margin-left: auto;
+            width: (497/680) * 100%;
+            &:before {
+                content: '';
+                display: block;
+                padding-top: 100%; 
+            }
+        }
+    }
+
+    .amenity__numbers{
+        flex-basis: (((232/2) + 563)/1475) * 100%;
+        padding-left: ((232/2)/1475) * 100%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
 }

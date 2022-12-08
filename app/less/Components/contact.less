@@ -6,6 +6,29 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    .fPa(0%, 87%, 0, 87px, 992px, 1600px);
+}
+
+.contact__title {
+    .fPa(0%, 87%, 0, 87px, 992px, 1600px);
+}
+
+.contact__text {
+    padding-bottom: 35px;
+    a {
+        transition: color 0.25s linear;
+        &:hover {
+            color: @main-color;
+        }
+    }
+}
+
+.contact__phone {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: (38/48);
+    /* or 79% */
+    text-align: center;
 }
 
 .contact__download-btn, .contact__location-btn {
@@ -45,6 +68,7 @@
 .contact__location-btn {
 
     text-decoration: underline;
+    margin-bottom: 44px;
 
     .ico {
         margin-left: 0;
@@ -56,4 +80,58 @@
     span {
         font-weight: 600;
     }
+}
+
+.contact__btn.main-btn {
+    background-color: @white;
+    color: @main-color;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &:hover {
+        background-color: @main-color;
+        color: @white;
+    }
+}
+
+.contact__copyright.text {
+    font-size: (14/24) * 1rem;
+    font-weight: 500;
+    line-height: (25/14);
+}
+
+.contact__map {
+    position: relative;
+    margin-bottom: 55px;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: (839/1475) * 100%;
+    }
+
+    iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
 }

@@ -2,7 +2,7 @@
     .amenity__layer
         .center
             .amenity__top.f-container
-                atricle.amenity__info
+                atricle.amenity__info.desktop
                     p.amenity__subtitle.subtitle
                         |PROPERTY AMENITIES
                     h2.amenity__title.title.title__h2
@@ -12,13 +12,15 @@
                             |Limassol’s finest coastal living experience is enriched by superb service, an abundance of amenities, and a dedicated concierge. Attentive staff deliver highly personalised hospitality to every resident. Sunmar is a place to play, to rest and to establish lasting memories.
                         p.amenity__paragraph.text.paragraph
                             |Enjoy a glass of wine with friends, slip into the cooling waters of the sparkling pool or pamper yourself with a bespoke treatment in a luxurious, indulgent spa, sauna or turkish bath. The possibilities are endless at sunmar – set your imagination free.
-                    a.amenity__btn.main-btn(href="#")
+                    button.amenity__btn.main-btn(data-micromodal-trigger="modal-1")
                         |Discover more
-                .amenity__main-image
-                    img(src="img/30-min.png", alt="Sunmar")
+                .amenity__images
+                    .amenity__main-image
+                        img(src="img/30-min.png", alt="Sunmar")
             .amenity__bottom.f-container
-                .amenity__main-image
-                    img(src="img/31-min.png", alt="Sunmar")
+                .amenity__images
+                    .amenity__main-image
+                        img(src="img/31-min.png", alt="Sunmar")
                 .amenity__numbers.numbers-cards
                     .numbers-card
                         span.numbers-card__num

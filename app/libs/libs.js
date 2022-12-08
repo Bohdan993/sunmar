@@ -3,7 +3,8 @@
 // import jquery from "jquery";
 
 import Isotope from "isotope-layout";
-import Splide from '@splidejs/splide'
+import Splide from '@splidejs/splide';
+import Micromodal from 'micromodal';
 
 
 
@@ -13,5 +14,6 @@ import Splide from '@splidejs/splide'
 
 export {
     Isotope,
-    Splide
+    Splide,
+    Micromodal
 }

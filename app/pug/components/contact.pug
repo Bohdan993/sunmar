@@ -6,8 +6,8 @@
                     |Download brochure
                     i.ico
                         +svg2('download')
-                    a.contact__btn.main-btn(href="#")
-                        |Fill out an application
+                button.contact__btn.main-btn(data-micromodal-trigger="modal-1")
+                    |Fill out an application
             .contact__middle
                 atricle.contact__info
                     h2.contact__title.title.title__h2
@@ -23,11 +23,19 @@
                             br
                             a(href="mailto:Sunmarresidence@gmail.com")
                                 |Sunmarresidence@gmail.com
-                        a(href="tel:+3579591955")
+                        a.contact__phone(href="tel:+3579591955")
                             |+357 95 919 555
             .contact__bottom
                 a.contact__location-btn(href="#") 
                     i.ico
                         +svg2('map-pin')
                     |Location
+                .contact__map
+                    iframe#gmap_canvas(width='600' height='500' src='https://maps.google.com/maps?q=Sunmar%20Residence,%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D1%81%D0%BE%D0%B9%D1%8F,%20%D0%9A%D1%96%D0%BF%D1%80&t=&z=15&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+                    a(href='https://123movies-to.org')
+                p.contact__copyright.text
+                    |SUNMAR and the SUNMAR logo are trademarks of SUNMAR.
+                    br
+                    |© Copyright 2022 SUNMAR. All rights reserved.
+
 
