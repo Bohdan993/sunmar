@@ -101,8 +101,6 @@ textarea {
 
 label {
   margin-bottom: 0;
-  font-size: 12px;
-  font-weight: 300;
 }
 
 button {
@@ -250,19 +248,24 @@ main {
   height: 17px;  
   background: @main-color;
   border-radius: 50%;
+  padding: 0;
 
   &.is-active {
     background-color: @white;
   }
 }
 
+.splide {
+  overflow-x: hidden;
+}
+
 
 .desktop {
-  display: block;
+  display: block!important;
 }
 
 .mobile {
-  display: none;
+  display: none!important;
 }
 
 .scale {
@@ -272,6 +275,44 @@ main {
   }
 }
 
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: @white;
+  background-clip: padding-box;
+  border: 1px solid @main-color;
+  transition: border-color .25s linear,box-shadow .25s linear;
+  text-align: left;
+  resize: none;
+
+  &::-webkit-input-placeholder {
+    text-align: left;
+  }
+
+  &::-moz-placeholder {
+    text-align: left;
+  }
+}
+
+.form-control:focus {
+  background-color: @white;
+  border-color: @main-color;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(@main-color, 0.25);
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+
+  label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+}
 
 //|||||||||||||||||||COMMON ELEMENTS END|||||||||||||||||||//
 
@@ -295,16 +336,29 @@ main {
   }
 
   .desktop {
-    display: none;
+    display: none!important;
   }
   
   .mobile {
-    display: block;
+    display: block!important;
   }
 
   .splide__arrow>div {
     width: 80px;
     height: 80px;
+  }
+
+  .splide__arrow--next {
+    right:35px;
+  }
+    
+  .splide__arrow--prev {
+    left: 35px;
+  }
+
+  .splide__pagination__page {
+    width: 12px;
+    height: 12px;  
   }
 }
 
@@ -325,6 +379,25 @@ main {
     width: 60px;
     height: 60px;
   }
+
+  .splide__arrow--next {
+    right:25px;
+  }
+    
+  .splide__arrow--prev {
+    left: 25px;
+  }
+
+  .splide__pagination__page {
+    width: 8px;
+    height: 8px;  
+  }
+
+  .splide__pagination {
+      li {
+        padding: 0 3px;
+      }
+  }
 }
 
 
@@ -343,6 +416,25 @@ main {
   .splide__arrow>div {
     width: 40px;
     height: 40px;
+  }
+
+  .splide__arrow--next {
+    right:10px;
+  }
+    
+  .splide__arrow--prev {
+    left: 10px;
+  }
+
+  .splide__pagination__page {
+    width: 5px;
+    height: 5px;  
+  }
+
+  .splide__pagination {
+      li {
+        padding: 0 2px;
+      }
   }
 }
 

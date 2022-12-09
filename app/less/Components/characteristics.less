@@ -1,5 +1,5 @@
 .characteristics__layer {
-    .fPa((220%/2), (234%/2), (220px/2), (234px/2), 992px, 1600px);
+    .fPa((220%/2), (234%/2), (220px/2), (234px/2), 576px, 1600px);
 }
 
 .characteristics__cards {
@@ -51,7 +51,31 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .characteristics__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .characteristics__card {
+        width: 232px;
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+    .characteristics__number {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .characteristics__text {
+        font-size: 18px;
+    }
+
+    .characteristics__number:before {
+        bottom: -20px;
+    }
 }
 
 @media screen and (max-width: 576px) {

@@ -28,8 +28,6 @@ export const initFacilityGrid = (grid) => {
     let coef = Math.ceil(iso.items.length / numOfItems);
     grid.style.maxHeight = 762 * coef + 'px';
 
-    console.log(iso)
-
     iso.items.forEach(item => {
         const bindedHandleClick = handleClick.bind(null, item.element, iso.items);
         item.element.addEventListener('click', bindedHandleClick);

@@ -3,8 +3,6 @@ export function splideArrowsExtention( Splide, Components, options ) {
      * Optional. Called when the component is mounted.
      */
     function mount() {
-        console.log(Splide);
-        console.log(Components);
         let slides = Components.Slides.get();
         let slidesLen = slides.length;
         onMoved(slidesLen);

@@ -7,6 +7,7 @@
   }
   
   .modal__overlay {
+    padding: 0 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +26,6 @@
     max-width: 650px;
     width: 100%;
     max-height: 100vh;
-    border-radius: 4px;
     overflow-y: auto;
     box-sizing: border-box;
   }
@@ -49,6 +49,11 @@
   .modal__close {
     background: transparent;
     border: 0;
+    transition: color 0.25s linear;
+
+    &:hover {
+      color: @main-color;
+    }
   }
   
   .modal__header .modal__close:before { content: "\2715"; }
@@ -98,6 +103,9 @@
     color: #fff;
   }
   
+  .modal__btn_original {
+    margin: 0 auto;
+  }
   
   
   /**************************\
@@ -155,13 +163,19 @@
 
 
 @media screen and (max-width: 992px) {
-
+  .modal__overlay {
+    padding: 0 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    
+  .modal__overlay {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    
+  .modal__overlay {
+    padding: 0 15px;
+  }
 }

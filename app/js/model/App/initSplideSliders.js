@@ -36,7 +36,6 @@ export const initSplideSliders = () => {
   function handleResize(){
     if(window.innerWidth <= 992) {
       if(!mounted) {
-        console.log('dkd');
         lobbySlider.mount({splideArrowsExtention});
         about2Slider.mount({splideArrowsExtention})
         mounted = true;

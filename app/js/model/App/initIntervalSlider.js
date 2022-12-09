@@ -26,8 +26,6 @@ const initIntervalSlider = ($slider) => {
         
 
         timer = setTimeout(start, 5000);
-
-        console.log($images.length);
     }
 
 

@@ -1,5 +1,5 @@
 .preview__layer {
-    .fPa((221%/2), (215%/2), (221px/2), (215px/2), 992px, 1600px);
+    .fPa((221%/2), (215%/2), (221px/2), (215px/2), 576px, 1600px);
 }
 
 .preview__btn {
@@ -77,6 +77,20 @@
             height: auto;
             min-height: unset;
         }
+    }
+
+    .preview__image {
+        &:before {
+            padding-top: (263/343) * 100%;
+        }
+    }
+
+    .preview__image:nth-child(2n) {
+        margin-left: 32px;
+    }
+
+    .preview__image:nth-child(2n+1) {
+        margin-right: 32px;
     }
 
 
