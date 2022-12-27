@@ -5,8 +5,7 @@
 import Isotope from "isotope-layout";
 import Splide from '@splidejs/splide';
 import Micromodal from 'micromodal';
-
-
+import {Email} from './smtp.js'
 
 // window.$ = jquery;
 // window.jQuery = jquery;
@@ -15,5 +14,6 @@ import Micromodal from 'micromodal';
 export {
     Isotope,
     Splide,
-    Micromodal
+    Micromodal,
+    Email
 }

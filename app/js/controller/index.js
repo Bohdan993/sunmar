@@ -3,7 +3,8 @@ import {
 	initIntervalSlider,
 	initFacilityGrid,
 	initSplideSliders,
-	initModal
+	initModal,
+	initSendForm
 } from '../model/index.js';
 
 
@@ -11,7 +12,8 @@ import {
 import {
 	// $accordeons,
 	$intervalSlider,
-	$facilityGrid
+	$facilityGrid,
+	$form
 	} from '../view/index.js';
 
 
@@ -21,6 +23,7 @@ const app = {
 		this.ifg();
 		this.iss();
 		this.im();
+		this.isf();
 	},
 	iis(){
 		initIntervalSlider($intervalSlider);
@@ -33,6 +36,9 @@ const app = {
 	},
 	im(){
 		initModal();
+	},
+	isf(){
+		initSendForm($form);
 	}
 }
 

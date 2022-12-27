@@ -10,13 +10,24 @@
                     form#modal-form
                         .form-group
                             label(for='name-input') Name
-                            input#name-input.form-control(type='text' placeholder='Name' name="name")
+                            input#name-input.form-control(type='text' placeholder='Name' name="name" required)
                         .form-group
                             label(for='phone-input') Phone Number
-                            input#phone-input.form-control(type='tel' placeholder='Phone Number' name="phone")
+                            input#phone-input.form-control(type='tel' placeholder='Phone Number' name="phone" required)
                         .form-group
                             label(for='comment-textarea') Comment
                             textarea#comment-textarea.form-control(rows='5' name="comment")
                 footer.modal__footer
                     button.modal__btn_original.main-btn(type="submit" form="modal-form")
                         |Send
+    #modal-2.modal.micromodal-slide(aria-hidden='true')
+        .modal__overlay(tabindex='-1' data-micromodal-close='')
+            .modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+                header.modal__header
+                    h2.h2-modal__title.title__h2.title
+                        |Thank you!
+                    button.modal__close(aria-label='Close modal' data-micromodal-close='')
+                main#modal-2-content.modal__content
+                    p.modal__paragraph.paragraph.text
+                        |Our manager will contact you soon.
+                footer.modal__footer

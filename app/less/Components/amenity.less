@@ -5,7 +5,7 @@
 .numbers-card {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
 
     &:not(:last-child) {
         margin-bottom: 28px;
@@ -13,10 +13,10 @@
 }
 
 .numbers-card__num {
-    font-family: 'Playfair Display';
-    font-style: italic;
+    // font-family: 'Playfair Display';
+    // font-style: italic;
     font-weight: 400;
-    .fSize(96vw, 96px * (576/1475), 96px, 576px, 1475px);
+    .fSize(50vw, 50px * (576/1475), 50px, 576px, 1475px);
     line-height: (84/96);
     text-transform: uppercase;
     color: @main-color;
@@ -168,7 +168,7 @@
 
 @media screen and (max-width: 576px) {
     .numbers-card__num {
-        font-size: 46px;
+        font-size: 20px;
     }
 
     .amenity__bottom {
