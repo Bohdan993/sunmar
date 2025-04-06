@@ -2,7 +2,6 @@
 @import url("app/less/Common/_mixins.less");
 @import url("app/less/Common/_fonts.less");
 
-
 html {
   font-size: 24px;
   scroll-behavior: smooth;
@@ -13,7 +12,6 @@ body {
   color: @font-color;
   width: 100%;
 }
-
 
 ::selection {
   background: rgba(@main-color, 0.8);
@@ -36,10 +34,7 @@ body {
   margin: 0;
   padding: 0;
   // overflow-y: hidden;
-
 }
-
-
 
 *,
 *:before,
@@ -47,7 +42,6 @@ body {
   box-sizing: border-box;
   // line-height: 1;
 }
-
 
 img,
 picture,
@@ -98,7 +92,6 @@ textarea {
   text-align: center;
 }
 
-
 label {
   margin-bottom: 0;
 }
@@ -110,21 +103,17 @@ button {
   border: none;
 }
 
-
 main {
   width: 100%;
 }
-
 
 // .ico {
 //   display: block;
 // }
 
-
 // .hidden {
 //   display: none;
 // }
-
 
 // [data-fields] {
 //   height: 0;
@@ -162,15 +151,15 @@ main {
 
 .splide__arrow--next {
   position: absolute;
-  right:50px;
+  right: 50px;
 }
-  
+
 .splide__arrow--prev {
   position: absolute;
   left: 50px;
 }
 
-.splide__arrow  {
+.splide__arrow {
   padding: 0;
   margin: 0;
   & > div {
@@ -184,7 +173,7 @@ main {
 
   &.splide__arrow--next {
     &:before {
-      content: '';
+      content: "";
       width: 114%;
       height: 1px;
       top: 50%;
@@ -205,7 +194,7 @@ main {
 
   &.splide__arrow--prev {
     &:before {
-      content: '';
+      content: "";
       width: 114%;
       height: 1px;
       top: 50%;
@@ -223,8 +212,6 @@ main {
       }
     }
   }
-
-
 }
 
 .splide__pagination {
@@ -245,7 +232,7 @@ main {
 
 .splide__pagination__page {
   width: 17px;
-  height: 17px;  
+  height: 17px;
   background: @main-color;
   border-radius: 50%;
   padding: 0;
@@ -259,13 +246,12 @@ main {
   overflow-x: hidden;
 }
 
-
 .desktop {
-  display: block!important;
+  display: block !important;
 }
 
 .mobile {
-  display: none!important;
+  display: none !important;
 }
 
 .scale {
@@ -285,7 +271,7 @@ main {
   background-color: @white;
   background-clip: padding-box;
   border: 1px solid @main-color;
-  transition: border-color .25s linear,box-shadow .25s linear;
+  transition: border-color 0.25s linear, box-shadow 0.25s linear;
   text-align: left;
   resize: none;
 
@@ -305,7 +291,6 @@ main {
   box-shadow: 0 0 0 0.2rem rgba(@main-color, 0.25);
 }
 
-
 .form-group {
   margin-bottom: 1rem;
 
@@ -317,13 +302,8 @@ main {
 
 //|||||||||||||||||||COMMON ELEMENTS END|||||||||||||||||||//
 
-
-
-
-
-
-
-@media screen and(max-width: 1200px) {}
+@media screen and(max-width: 1200px) {
+}
 
 @media screen and(max-width: 992px) {
   html {
@@ -337,35 +317,33 @@ main {
   }
 
   .desktop {
-    display: none!important;
-  }
-  
-  .mobile {
-    display: block!important;
+    display: none !important;
   }
 
-  .splide__arrow>div {
+  .mobile {
+    display: block !important;
+  }
+
+  .splide__arrow > div {
     width: 80px;
     height: 80px;
   }
 
   .splide__arrow--next {
-    right:35px;
+    right: 35px;
   }
-    
+
   .splide__arrow--prev {
     left: 35px;
   }
 
   .splide__pagination__page {
     width: 12px;
-    height: 12px;  
+    height: 12px;
   }
 }
 
-
 @media screen and(max-width: 768px) {
-
   html {
     font-size: 16px;
   }
@@ -376,32 +354,30 @@ main {
     }
   }
 
-  .splide__arrow>div {
+  .splide__arrow > div {
     width: 60px;
     height: 60px;
   }
 
   .splide__arrow--next {
-    right:25px;
+    right: 25px;
   }
-    
+
   .splide__arrow--prev {
     left: 25px;
   }
 
   .splide__pagination__page {
     width: 8px;
-    height: 8px;  
+    height: 8px;
   }
 
   .splide__pagination {
-      li {
-        padding: 0 3px;
-      }
+    li {
+      padding: 0 3px;
+    }
   }
 }
-
-
 
 @media screen and(max-width: 576px) {
   html {
@@ -414,28 +390,28 @@ main {
     }
   }
 
-  .splide__arrow>div {
+  .splide__arrow > div {
     width: 40px;
     height: 40px;
   }
 
   .splide__arrow--next {
-    right:10px;
+    right: 10px;
   }
-    
+
   .splide__arrow--prev {
     left: 10px;
   }
 
   .splide__pagination__page {
     width: 5px;
-    height: 5px;  
+    height: 5px;
   }
 
   .splide__pagination {
-      li {
-        padding: 0 2px;
-      }
+    li {
+      padding: 0 2px;
+    }
   }
 }
 
@@ -444,13 +420,6 @@ main {
 //   }
 
 // }
-
-
-
-
-
-
-
 
 @import url("app/less/BEM Components/center/center.less");
 // @import url("app/less/BEM Components/center/_size/center_size_l.less");
@@ -481,8 +450,6 @@ main {
 // @import url("app/less/BEM Components/sidebar/sidebar.less");
 // @import url("app/less/BEM Components/sidebar/_size/sidebar_size_l.less");
 
-
-
 @import url("app/less/Components/about.less");
 @import url("app/less/Components/about2.less");
 @import url("app/less/Components/amenity.less");
@@ -498,8 +465,5 @@ main {
 @import url("app/less/Components/pool.less");
 @import url("app/less/Components/preview.less");
 @import url("app/less/Components/modal.less");
-
-
-
 
 // @import url("app/less/sprite.less");
